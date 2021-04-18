@@ -35,8 +35,8 @@ async def assistant(event):
             if udB.get("PMBOT") == "True":
                 ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
             await event.reply(
-                f"Hey there, this is Ultroid Assistant of {OWNER_NAME}!\n\n{ok}",
-                buttons=[Button.url("Know More", url="https://t.me/TeamUltroid")],
+                f"Hey there, this is Assistant bot of {OWNER_NAME}!\n\n{ok}",
+                buttons=[Button.url("Know More about my owner", url="https://t.me/unforgettable_vibes")],
             )
         else:
             u = await event.client.get_entity(event.chat_id)
